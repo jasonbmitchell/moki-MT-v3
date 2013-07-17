@@ -3856,3 +3856,91 @@ ul.bullets-blue li {
 #signup {
 	cursor: pointer;
 }
+
+/* Header Alert : 130717 */
+
+div#header-MT {
+		background-color: #fff;
+		margin: 0em;
+		padding: 0em;
+		position:fixed;
+		top: 3.5em;
+		z-index: 1001;
+		width:100%;
+		height: 10em;
+		-webkit-box-shadow: 0em 0.0625em 0.25em 0.125em rgba(00, 00, 00, 0.2);
+		box-shadow: 0em 0.0625em 0.25em 0.125em rgba(00, 00, 00, 0.2);
+	}
+
+div#content-MT {
+	padding-top: 13.5em;
+	background-color: #fff;
+}
+
+div#footer-MT {
+	/*display: block;*/
+	background-color: #ebebeb;
+	background: -moz-linear-gradient(270deg, #ccc 0em, #ebebeb 0.333em);
+	background: -webkit-linear-gradient(270deg, #ccc 0em, #ebebeb 0.333em);
+	background: -o-linear-gradient(270deg, #ccc 0em, #ebebeb 0.333em);
+	background: linear-gradient(270deg, #ccc 0em, #ebebeb 0.333em);
+	padding: 2em 0em 3em 0em;
+	height: 10em;
+	overflow: auto;
+}
+
+div#alert {
+	margin: 0em;
+	padding: 0em 0em 0em 0em;
+	position:fixed;
+	top: 0em;
+	z-index: 1000;
+	background: -moz-linear-gradient(90deg, #e19900 0em, @moki-orange 0.333em);
+	background: -webkit-linear-gradient(90deg, #e19900 0em, @moki-orange 0.333em);
+	background: -o-linear-gradient(90deg, #e19900 0em, @moki-orange 0.25em);
+	background: linear-gradient(90deg, #e19900 0em, @moki-orange 0.25em);
+	width:100%;
+	height: 3.5em;
+	overflow: auto;
+
+	ul {
+		margin: 0.6em auto 0em auto;
+		padding: 0em;
+		width: 650px;
+		list-style-type: none;
+
+		li {
+			margin: 0em 0em 0em 0em;
+			padding: 0em 2em 0em 0em;
+			float:left;
+
+			a.callToAction {
+				display: inline-block;
+				margin: 0em;
+				padding: 0.5em 1.5em 0.5em 1.0em;
+				background-color: #fff;
+				border: none;
+				border-radius: 0.333em;
+				font-family: "proxima-nova", sans-serif;
+				font-weight: 500;
+				font-style: normal;
+				color: @moki-gray-dark;
+				font-size: 1.0em;
+				text-decoration: none;
+			}
+
+			a.callToAction:hover {
+				background-color: @moki-gray-dark;
+				color: #fff;
+			}
+		}
+
+		li:first-child {
+			padding: 0.5em 2em 0em 0em;
+		}
+
+		li:last-child {
+			padding: 0em 0em 0em 0em;
+		}
+	}
+}

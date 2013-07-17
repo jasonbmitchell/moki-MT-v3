@@ -33,8 +33,14 @@
 <body class="bkgd-white">	
 
 <?php get_template_part( 'modals', 'MT' ); ?>
-
-	<div id="header-lg"> <!-- div#header-lg open -->
+	<div id="alert">
+		<ul>
+			<li>Get the complete guide to building tablet kiosks</li>
+			<li><img src="<?php bloginfo('template_url'); ?>/images/MOKIMobility_NEWeb_prom-eBook.png" title="" class="inline"/></li>
+			<li><a href="<?php echo home_url('/'); ?>ebook-two/" class="callToAction">download now</a></li>
+		</ul>
+	</div>
+		<div id="header-MT">
 		<div class="content"> <!-- div.content open -->
 			<div class="row">
 				<div class="column3 span1">
