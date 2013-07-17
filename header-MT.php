@@ -37,7 +37,7 @@
 		<ul>
 			<li>Get the complete guide to building tablet kiosks</li>
 			<li><img src="<?php bloginfo('template_url'); ?>/images/MOKIMobility_NEWeb_prom-eBook.png" title="" class="inline"/></li>
-			<li><a href="<?php echo home_url('/'); ?>ebook-two/" class="callToAction">download now</a></li>
+			<li><a href="http://mokimobility.com/ebook-two/" class="callToAction" target="_blank">download now</a></li>
 		</ul>
 	</div>
 		<div id="header-MT">
