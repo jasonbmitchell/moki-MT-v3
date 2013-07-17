@@ -1,0 +1,1 @@
+[06-Nov-2012 09:26:47] PHP Fatal error:  Call to undefined function  wp_head() in /home7/mokinetw/public_html/mokitouch/wp-content/themes/blankslate/event-header.php on line 7

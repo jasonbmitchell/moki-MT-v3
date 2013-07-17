@@ -1,0 +1,26 @@
+
+h3, h1{
+    font-family: 'proxima_nova_regular';
+    color:#0089c9;
+}
+
+h1{
+    margin-top:60px;
+}
+
+.body a{
+    color:#009bdb;
+}
+
+.body{
+    background-color:white;
+    padding-bottom:50px;
+}
+
+h3{
+    -webkit-margin-after:0;
+}
+
+p{
+    -webkit-margin-before:0;
+}

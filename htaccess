@@ -1,0 +1,22 @@
+# MT (5/6/13)
+AddHandler php-stable .php
+
+# Redirects by Everythird (5/6/13)
+Redirect 301 /armoractive/ http://mokitouch.com/partners/
+Redirect 301 /activekiosk/ http://mokitouch.com/partners/
+Redirect 301 /features/ http://mokitouch.com
+Redirect 301 /heckler/ http://mokitouch.com/partners/heckler/
+Redirect 301 /ilocks/ http://mokitouch.com/partners/ilocks/
+Redirect 301 /ipad-kiosks/ http://mokitouch.com/partners/ipad-kiosks/
+Redirect 301 /maclocks/ http://mokitouch.com/partners/maclocks/
+Redirect 301 /mokitouchpro/ http://mokitouch.com
+Redirect 301 /sky-pad-stands/ http://mokitouch.com/partners/sky-pad-stands/
+Redirect 301 /solutions/mokitouch/ http://mokitouch.com
+Redirect 301 /solutions/mokitouch/in-app-mokimanage/ http://mokitouch.com
+Redirect 301 /solutions/mokitouch/in-app-start/ http://mokitouch.com
+Redirect 301 /solutions/mokitouch/mokitouch-in-app-signup-confirmation/ http://mokitouch.com
+Redirect 301 /solve-it-store/ http://mokitouch.com/partners/solve-it-store/
+Redirect 301 /touch/ http://mokitouch.com/partners/
+Redirect 301 /zephyr/ http://mokitouch.com/partners/zephyr/
+Redirect 301 /partners-old/archelon/ http://mokitouch.com/partners/archelon/
+Redirect 301 /manage/ /mokimanage/
