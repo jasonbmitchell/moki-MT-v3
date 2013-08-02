@@ -38,10 +38,10 @@
 		<div class="content"> <!-- div.content open -->
 			<div class="row">
 				<div class="column3 span1">
-				<div id="navigation-top">
-					<div class="login-left bkgd-gray bottomLeftRadius"><a href="https://mokimanage.appspot.com/" target="_blank"  class="type-size-small">Login</a></div>
-					<div class="login-right bkgd-gray bottomRightRadius"><a id="signup" class="type-size-small">Sign up</a></div>
-				</div>
+					<ul id="navigation-top">
+						<li><a href="https://mokimanage.appspot.com/" target="_blank">Login</a></li>
+						<li><a class="btn-signup">Sign up</a></li>
+					</ul>
 				</div>
 			</div>
 			<div class="row">

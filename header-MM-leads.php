@@ -37,11 +37,10 @@
 		<div class="content"> <!-- div.content open -->
 			<div class="row">
 				<div class="column3 span1">
-				<div id="navigation-top">
-					<div class="login-left bottomLeftRadius"><a href="https://www.mokimanage.com/start" target="_blank">Enroll a Device</a></div>
-					<div class="login-middle"><a href="https://mokimanage.appspot.com/" target="_blank">Login</a></div>
-					<div class="login-right bottomRightRadius"><a id="signup">Sign up</a></div>
-				</div>
+					<ul id="navigation-top">
+						<li><a href="https://mokimanage.appspot.com/" target="_blank">Login</a></li>
+						<li><a class="btn-signup">Sign up</a></li>
+					</ul>
 				</div>
 			</div>
 			<div class="row">

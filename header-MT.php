@@ -15,6 +15,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js" type="text/javascript" ></script>
 	<script type="text/javascript" src="<?php bloginfo( 'stylesheet_directory' ); ?>/js/jquery.validate.js"></script>
 	<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/jquery.maskedinput.min.js" ></script>
+	<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/jquery.cookie.js" ></script>
 	
 	<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/marketo.js"></script>
 	<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/app-MT.js"></script>
@@ -31,8 +32,13 @@
 </head>
 
 <body class="bkgd-white">	
-
-<?php get_template_part( 'modals', 'MT' ); ?>
+	<?php get_template_part( 'modals', 'MT' ); ?>
+	<div id="alert-navigation">
+		<ul>
+			<li id='btn-header-open'></li>
+			<li id='btn-header-close'></li>
+		</ul>
+	</div>
 	<div id="alert">
 		<ul>
 			<li>Get the complete guide to building tablet kiosks</li>
@@ -44,10 +50,10 @@
 		<div class="content"> <!-- div.content open -->
 			<div class="row">
 				<div class="column3 span1">
-				<div id="navigation-top">
-					<div class="login-left bkgd-gray bottomLeftRadius"><a href="https://mokimanage.appspot.com/" target="_blank"  class="type-size-small">Login</a></div>
-					<div class="login-right bkgd-gray bottomRightRadius"><a id="signup" class="type-size-small">Sign up</a></div>
-				</div>
+					<ul id="navigation-top">
+						<li><a href="https://mokimanage.appspot.com/" target="_blank">Login</a></li>
+						<li><a class="btn-signup">Sign up</a></li>
+					</ul>
 				</div>
 			</div>
 			<div class="row">

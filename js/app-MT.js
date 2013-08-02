@@ -1,5 +1,7 @@
 $("document").ready(function() {
 
+	//alert("HI");
+
 // Footer News
 function getTheNews() {
 
@@ -515,5 +517,76 @@ function setTooltip(lbl, pos) {
   TweenMax.staggerTo([logo0, logo1, logo2, logo3, logo4], logoTransition, {delay: 1, autoAlpha:1, x: "-8px", ease:Cubic.easeOut}, 0.5);
   
   */
+
+// header animation and interactivity
+alert("HI23");
+	//var alertHeight = $("#alert").height();
+	//var targetOpen = 0;
+	//var targetClosed = alertHeight * -1;
+	var cookieAlert = $.cookie("MT_alert");
+
+	TweenMax.to($("#btn-header-open"), 0, {autoAlpha: 0, css:{top: "-56px"}, ease:Bounce.easeOut});
+	TweenMax.to($("#btn-header-close"), 0, {autoAlpha: 1, css:{top: "0px"}, ease:Bounce.easeOut});
+
+	
+
+	if (cookieAlert == undefined)  {
+		TweenMax.to($("#alert"), 0, {css:{top: "-56px"}, ease:Bounce.easeOut});
+		TweenMax.to($("#header-MT"), 0, {css:{top: "0px"}, ease:Bounce.easeOut});
+		//TweenMax.to($("#content-MM"), 0, {css:{top: "0px"}, ease:Bounce.easeOut});
+		
+		TweenMax.to($("#btn-header-close"), 0, {autoAlpha: 0, css:{top: "-56px"}, ease:Bounce.easeOut});
+		
+		TweenMax.to($("#alert"), 0.25, {delay: 2, css:{top: "0px"}, ease:Bounce.easeOut});
+		TweenMax.to($("#header-MT"), 0.25, {delay: 2, css:{top: "56px"}, ease:Bounce.easeOut});
+		TweenMax.to($("#content-MT"), 0.25, {delay: 2, css:{top: "56px"}, ease:Bounce.easeOut});
+		
+		TweenMax.to($("#btn-header-close"), 0.25, {delay: 2, autoAlpha: 1, css:{top: "0px"}, ease:Bounce.easeOut});
+	} else {
+		if (cookieAlert == "hide")  {
+			TweenMax.to($("#alert"), 0, {css:{top: "-56px"}, ease:Bounce.easeOut});
+			TweenMax.to($("#header-MT"), 0, {css:{top: "0px"}, ease:Bounce.easeOut});
+
+			TweenMax.to($("#btn-header-open"), 0, {autoAlpha: 1, css:{top: "0px"}, ease:Bounce.easeOut});
+			TweenMax.to($("#btn-header-close"), 0, {autoAlpha: 0, css:{top: "-56px"}, ease:Bounce.easeOut});
+		} else {
+			
+			TweenMax.to($("#alert"), 0, {css:{top: "0px"}, ease:Bounce.easeOut});
+			TweenMax.to($("#header-MT"), 0, {css:{top: "56px"}, ease:Bounce.easeOut});
+			TweenMax.to($("#content-MT"), 0, {css:{top: "56px"}, ease:Bounce.easeOut});
+
+			TweenMax.to($("#btn-header-open"), 0, {autoAlpha: 0, css:{top: "-56px"}, ease:Bounce.easeOut});
+			TweenMax.to($("#btn-header-close"), 0, {autoAlpha: 0, css:{top: "0px"}, ease:Bounce.easeOut});
+		}
+	}
+
+	$('#btn-header-open').click(function() {
+		TweenMax.to($("#alert"), 0.25, {css:{top: "0px"}, ease:Bounce.easeOut});
+		TweenMax.to($("#header-MT"), 0.25, {css:{top: "56px"}, ease:Bounce.easeOut});
+		TweenMax.to($("#content-MT"), 0.25, {css:{top: "56px"}, ease:Bounce.easeOut});
+
+		TweenMax.to($("#btn-header-open"), 0.25, {autoAlpha: 0, css:{top: "-56px"}, ease:Bounce.easeOut});
+		TweenMax.to($("#btn-header-close"), 0.25, {autoAlpha: 1, css:{top: "0px"}, ease:Bounce.easeOut});
+
+		$.cookie("MT_alert", "show", { expires: 7, path: '/'});
+
+		//TweenMax.to($("#btn-header-open"), 0.25, {autoAlpha: 0,y: -32, ease:Bounce.easeOut});
+		//TweenMax.to($("#btn-header-close"), 0.25, {autoAlpha: 1,y: 0, ease:Bounce.easeOut});
+	});
+
+	$('#btn-header-close').click(function() {
+		TweenMax.to($("#alert"), 0.25, {css:{top: "-56px"}, ease:Bounce.easeOut});
+		TweenMax.to($("#header-MT"), 0.25, {css:{top: "0px"}, ease:Bounce.easeOut});
+		TweenMax.to($("#content-MT"), 0.25, {css:{top: "0px"}, ease:Bounce.easeOut});
+
+		TweenMax.to($("#btn-header-open"), 0.25, {autoAlpha: 1, css:{top: "0px"}, ease:Bounce.easeOut});
+		TweenMax.to($("#btn-header-close"), 0.25, {autoAlpha: 0, css:{top: "-56px"}, ease:Bounce.easeOut});
+
+		$.cookie("MT_alert", "hide", { expires: 7, path: '/'});
+
+		//TweenMax.to($("#btn-header-open"), 0.25, {autoAlpha: 1, y: 0, ease:Bounce.easeOut});
+		//TweenMax.to($("#btn-header-close"), 0.25, {autoAlpha: 0, y: -32, ease:Bounce.easeOut});
+	});
+
 	
 });
