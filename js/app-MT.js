@@ -539,6 +539,8 @@ function setTooltip(lbl, pos) {
 		TweenMax.to($("#alert"), 0.25, {delay: 2, css:{top: "0px"}, ease:Bounce.easeOut});
 		TweenMax.to($("#header-MT"), 0.25, {delay: 2, css:{top: "56px"}, ease:Bounce.easeOut});
 		TweenMax.to($("#content-MT"), 0.25, {delay: 2, css:{top: "56px"}, ease:Bounce.easeOut});
+
+		$.cookie("MT_alert", "show", { expires: 7, path: '/'});
 		
 		TweenMax.to($("#btn-header-close"), 0.25, {delay: 2, autoAlpha: 1, css:{top: "0px"}, ease:Bounce.easeOut});
 	} else {
