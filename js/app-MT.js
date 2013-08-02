@@ -519,7 +519,6 @@ function setTooltip(lbl, pos) {
   */
 
 // header animation and interactivity
-alert("HI23");
 	//var alertHeight = $("#alert").height();
 	//var targetOpen = 0;
 	//var targetClosed = alertHeight * -1;
