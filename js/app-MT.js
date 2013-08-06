@@ -527,35 +527,23 @@ function setTooltip(lbl, pos) {
 	TweenMax.to($("#btn-header-open"), 0, {autoAlpha: 0, css:{top: "-56px"}, ease:Bounce.easeOut});
 	TweenMax.to($("#btn-header-close"), 0, {autoAlpha: 1, css:{top: "0px"}, ease:Bounce.easeOut});
 
-	
-
 	if (cookieAlert == undefined)  {
 		TweenMax.to($("#alert"), 0, {css:{top: "-56px"}, ease:Bounce.easeOut});
 		TweenMax.to($("#header-MT"), 0, {css:{top: "0px"}, ease:Bounce.easeOut});
-		//TweenMax.to($("#content-MM"), 0, {css:{top: "0px"}, ease:Bounce.easeOut});
-		
 		TweenMax.to($("#btn-header-close"), 0, {autoAlpha: 0, css:{top: "-56px"}, ease:Bounce.easeOut});
-		
 		TweenMax.to($("#alert"), 0.25, {delay: 2, css:{top: "0px"}, ease:Bounce.easeOut});
-		TweenMax.to($("#header-MT"), 0.25, {delay: 2, css:{top: "56px"}, ease:Bounce.easeOut});
-		TweenMax.to($("#content-MT"), 0.25, {delay: 2, css:{top: "56px"}, ease:Bounce.easeOut});
-
-		$.cookie("MT_alert", "show", { expires: 7, path: '/'});
-		
+		TweenMax.to($("#header-MT, #content-MT, #footer-MT"), 0.25, {delay: 2, css:{top: "56px"}, ease:Bounce.easeOut});
 		TweenMax.to($("#btn-header-close"), 0.25, {delay: 2, autoAlpha: 1, css:{top: "0px"}, ease:Bounce.easeOut});
+		$.cookie("MT_alert", "show", { expires: 7, path: '/'});
 	} else {
 		if (cookieAlert == "hide")  {
 			TweenMax.to($("#alert"), 0, {css:{top: "-56px"}, ease:Bounce.easeOut});
 			TweenMax.to($("#header-MT"), 0, {css:{top: "0px"}, ease:Bounce.easeOut});
-
 			TweenMax.to($("#btn-header-open"), 0, {autoAlpha: 1, css:{top: "0px"}, ease:Bounce.easeOut});
 			TweenMax.to($("#btn-header-close"), 0, {autoAlpha: 0, css:{top: "-56px"}, ease:Bounce.easeOut});
 		} else {
-			
 			TweenMax.to($("#alert"), 0, {css:{top: "0px"}, ease:Bounce.easeOut});
-			TweenMax.to($("#header-MT"), 0, {css:{top: "56px"}, ease:Bounce.easeOut});
-			TweenMax.to($("#content-MT"), 0, {css:{top: "56px"}, ease:Bounce.easeOut});
-
+			TweenMax.to($("#header-MT, #content-MT, #footer-MT"), 0, {css:{top: "56px"}, ease:Bounce.easeOut});
 			TweenMax.to($("#btn-header-open"), 0, {autoAlpha: 0, css:{top: "-56px"}, ease:Bounce.easeOut});
 			TweenMax.to($("#btn-header-close"), 0, {autoAlpha: 0, css:{top: "0px"}, ease:Bounce.easeOut});
 		}
@@ -563,30 +551,18 @@ function setTooltip(lbl, pos) {
 
 	$('#btn-header-open').click(function() {
 		TweenMax.to($("#alert"), 0.25, {css:{top: "0px"}, ease:Bounce.easeOut});
-		TweenMax.to($("#header-MT"), 0.25, {css:{top: "56px"}, ease:Bounce.easeOut});
-		TweenMax.to($("#content-MT"), 0.25, {css:{top: "56px"}, ease:Bounce.easeOut});
-
+		TweenMax.to($("#header-MT, #content-MT, #footer-MT"), 0.25, {css:{top: "56px"}, ease:Bounce.easeOut});
 		TweenMax.to($("#btn-header-open"), 0.25, {autoAlpha: 0, css:{top: "-56px"}, ease:Bounce.easeOut});
 		TweenMax.to($("#btn-header-close"), 0.25, {autoAlpha: 1, css:{top: "0px"}, ease:Bounce.easeOut});
-
 		$.cookie("MT_alert", "show", { expires: 7, path: '/'});
-
-		//TweenMax.to($("#btn-header-open"), 0.25, {autoAlpha: 0,y: -32, ease:Bounce.easeOut});
-		//TweenMax.to($("#btn-header-close"), 0.25, {autoAlpha: 1,y: 0, ease:Bounce.easeOut});
 	});
 
 	$('#btn-header-close').click(function() {
 		TweenMax.to($("#alert"), 0.25, {css:{top: "-56px"}, ease:Bounce.easeOut});
-		TweenMax.to($("#header-MT"), 0.25, {css:{top: "0px"}, ease:Bounce.easeOut});
-		TweenMax.to($("#content-MT"), 0.25, {css:{top: "0px"}, ease:Bounce.easeOut});
-
+		TweenMax.to($("#header-MT, #content-MT, #footer-MT"), 0.25, {css:{top: "0px"}, ease:Bounce.easeOut});
 		TweenMax.to($("#btn-header-open"), 0.25, {autoAlpha: 1, css:{top: "0px"}, ease:Bounce.easeOut});
 		TweenMax.to($("#btn-header-close"), 0.25, {autoAlpha: 0, css:{top: "-56px"}, ease:Bounce.easeOut});
-
 		$.cookie("MT_alert", "hide", { expires: 7, path: '/'});
-
-		//TweenMax.to($("#btn-header-open"), 0.25, {autoAlpha: 1, y: 0, ease:Bounce.easeOut});
-		//TweenMax.to($("#btn-header-close"), 0.25, {autoAlpha: 0, y: -32, ease:Bounce.easeOut});
 	});
 
 	

@@ -1,9 +1,8 @@
-<?php
-	$site = get_bloginfo('name');
-	$post = $wp_query->post;
-	if ($site == 'MokiTouch') {
-		include(TEMPLATEPATH . '/404-t-e3rd.php');
-	} else {
-		include(TEMPLATEPATH . '/404-m-e3rd.php');
-	}
-?>
+<?php get_header('MT'); ?>
+<div id="content-MT">
+	<div class="bkgd-blue">
+		<div class="content"><h1>That link is broken.</h1></div>
+	</div>
+	<div class="content padding-top-three padding-bottom-three"><p><strong>We can't seem to find what you're looking for.</strong> Please use the navigation above or below to find what you're looking for.</p></div>
+</div>
+<?php get_footer('MT'); ?>

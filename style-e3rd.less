@@ -828,7 +828,7 @@ div.pricing-last {
 	font-size: 0.5em;
 }
 
-div.bkgd-blue .content h1, div.bkgd-blueDark .content h1, div.header-blue .content h1 {
+div.bkgd-blueDark .content h1, div.header-blue .content h1 {
 	margin: 0px;
 	padding: 0px;
 	font-family: "proxima-nova", sans-serif;
@@ -866,11 +866,18 @@ h4 {
 	letter-spacing: 0.15em;
 }
 
-.bkgd-blue {
-	padding:0px;
-	margin: 0px;	
-	padding-top:45px;
+div.bkgd-blue {
 	background-color: @moki-blue;
+}
+
+div.bkgd-blue div.content h1 {
+	margin: 0em 0em 0em 0em;
+	padding: 1.5em 0em 0.5em 0em;
+	font-family: "proxima-nova", sans-serif;
+	font-size: 1.75em;
+	font-weight: 700;
+	font-style: normal;
+	color: @moki-white;
 }
 
 .bkgd-blueDark {
@@ -3891,8 +3898,8 @@ div#footer-MT {
 	background: linear-gradient(270deg, #ccc 0em, #ebebeb 0.333em);
 	padding: 2em 0em 3em 0em;
 	height: 10em;
-	overflow: auto;/*
-	position: relative;*/
+	overflow: auto;
+	position: relative;
 }
 
 div#alert {
