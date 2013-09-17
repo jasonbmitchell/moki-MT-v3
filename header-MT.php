@@ -51,7 +51,7 @@
 			<div class="row">
 				<div class="column3 span1">
 					<ul id="navigation-top">
-						<li><a href="https://mokimanage.appspot.com/" target="_blank">Login</a></li>
+						<li><a href="https://www.mokimanage.com/" target="_blank">Login</a></li>
 						<li><a class="btn-signup">Sign up</a></li>
 					</ul>
 				</div>
